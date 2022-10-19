@@ -1,18 +1,21 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-  <link href="/main.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Yeseva+One&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <nav class="flex flex-row items-center justify-center">
-            <div class="">
+        <nav class="flex flex-row items-center justify-center w-full">
+            <div>
                 <a href="#home">
-                    <span class="self-center text-xl">H | B</span>
+                    <span class="text-xl"> H | B </span>
                 </a>
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
@@ -20,32 +23,127 @@
             </div>
         </nav>
     </header>
+
     <main>
-        <div class="flex flex-col items-center justify-center" id="home">
-            
-            <h1>
-                Hannah Bethke
-            </h1>
-            <a href="#about">
-                Learn More
-            </a>
+        <!-- HOMEPAGE -->
+        <div class="flex flex-col items-center justify-center h-screen" id="home">
+                <h1 class="text-6xl">
+                    Hannah Bethke
+                </h1>
+                <a href="#about">
+                    Learn More
+                </a>
         </div>
-        <div class="grid grid-cols-3 p-10 ml-10" class="w-screen h-full" id="about">
-            <img class="max-w-auto h-auto col-span-1 m-10" src="/assets/images/Bethke 2022.jpg" alt="Image of Hannah Bethke">
+        <!-- ABOUT -->
+        <div class="grid grid-cols-3 p-10 ml-10 w-screen h-full" id="about">
+            <img class="max-w-auto h-auto col-span-1 m-10" src="./assets/images/Bethke 2022.jpg" alt="Image of Hannah Bethke">
             <div class="flex flex-col col-span-2 items-center m-10 p-10">
                 <h1 class="my-2.5">
                     About Me
                 </h1>
                 <p class="p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus, eaque eos aut molestias consequuntur ducimus itaque libero placeat mollitia quae quasi, voluptate, rem facilis ea voluptas atque! Aliquid, et
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti, sapiente ipsa, inventore vel temporibus exercitationem animi recusandae commodi accusantium assumenda iure vitae atque nemo reiciendis voluptate suscipit impedit fugit!.</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti, sapiente ipsa, inventore vel temporibus exercitationem animi recusandae commodi accusantium assumenda iure vitae atque nemo reiciendis voluptate suscipit impedit fugit!.
+                </p>
+                <p>
+                    Skills: 
+                </p>
             </div>
         </div>
-        <div class="flex flex-col items-center justify-center" id="portfolio">
-            <h1>
-                Hannah Bethke
-            </h1>
+        <!-- PORTFOLIO -->
+        <div class="grid grid-cols-3 p-10 ml-10 h-screen" id="portfolio">
+            <div class="flex flex-col col-span1">
+                <h1 class="text-white">
+                    Hannah Bethke
+                </h1>
+            </div>
+            <div class="flex flex-col col-span-2 items-center">
+                <h1 class="text-white">
+                    Recent Work
+                </h1>
+                <div class="container grid grid-cols-2 gap-5 m-auto max-h-[45rem] overflow-auto" id="recentWork">
+
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                          <p class="text-gray-700 text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                          </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                        </div>
+                      </div>
+                      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                          <p class="text-gray-700 text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                          </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                        </div>
+                      </div>
+                      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                          <p class="text-gray-700 text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                          </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                        </div>
+                      </div>
+                      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                          <p class="text-gray-700 text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                          </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                        </div>
+                      </div>
+                    <!-- <div class="w-full rounded text-white">
+                        <img class="blur-lg" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                            alt="image">
+                        <button>view</button>
+                    </div>
+                    <div class="w-full rounded">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                            alt="image">
+                    </div>
+                    <div class="w-full rounded">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                            alt="image">
+                    </div>
+                    <div class="w-full rounded">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                            alt="image">
+                    </div> -->
+
+
+
+
+                </div>
+            </div>
         </div>
-        <div class="flex flex-col items-center justify-center" id="contact">
+        <!-- CONTACT -->
+        <div class="flex flex-col items-center justify-center h-screen" id="contact">
             <h1>
                 Hannah Bethke
             </h1>
