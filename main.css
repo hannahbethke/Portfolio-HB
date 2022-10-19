@@ -4,42 +4,53 @@
 
 @import "tailwindcss/utilities";
 
-/* body {
-    background-image: url('/assets/images/Screen\ Shot\ 2022-10-18\ at\ 3.36.50\ PM.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 html {
     scroll-behavior: smooth;
   }
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
   
 #home {
-    background-color: purple;
-    width: 100%;
-    min-height: 100vh;
-}
-
-#home img {
-    max-width: 400px;;
+    background-color: #F0EFED;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    min-height: 100vh; */
 }
 
 #portfolio {
-    background-color: blue;
-    width: 100%;
-    min-height: 100vh;
+    /* background-color: #605E5E; */
+    background-color: black;
+    /* width: 100%;
+    min-height: 100vh; */
 }
 
 #contact {
-    background-color: purple;
-    width: 100%;
-    min-height: 100vh;
+    background-color: #F0EFED;
+    /* width: 100%;
+    min-height: 100vh; */
 }
+
+/* #recentWork {
+    overflow: scroll;
+    max-height: 800px;
+} */
 
 nav {
     position: fixed;
     background-color: white;
     width: 100%;
     justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Yeseva One', cursive;
 }
 
