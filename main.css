@@ -1,0 +1,45 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* body {
+    background-image: url('/assets/images/Screen\ Shot\ 2022-10-18\ at\ 3.36.50\ PM.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+#home {
+    background-color: purple;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#home img {
+    max-width: 400px;;
+}
+
+#portfolio {
+    background-color: blue;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#contact {
+    background-color: purple;
+    width: 100%;
+    min-height: 100vh;
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+}
+
