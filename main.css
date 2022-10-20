@@ -50,14 +50,61 @@ h1 {
     font-family: 'Yeseva One', cursive;
 }
 
-.card:hover {
-    transform: rotateY(180deg);
+/* 
+TEST */
+
+  
+  .scroll-container {
+    max-width: 980px;
+    margin: auto;
+    padding: 20px 0px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background: #ad343e;
+  }
+  
+  .card-flip {
+    perspective: 1000px;
+    display: flex;
+    /* total cards width + cards margin */
+    /* comment out and flip the last card to see the effect */
+    width: calc((400px * 3) + (20px * 6));
+  }
+  
+  .flip {
+    min-width: 400px;
+    height: 400px;
+    margin: 20px;
+    position: relative;
+    transition: transform 1s;
     transform-style: preserve-3d;
   }
   
-  .card-back {
+  .isFlipped {
     transform: rotateY(180deg);
   }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* .card {
+
+    
+  } */
+/*   
+  .card-body {
+    background: #224d71;
+  } */
+  
 
   /* TEXT ANIMATION */
 

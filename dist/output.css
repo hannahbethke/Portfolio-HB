@@ -630,10 +630,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -650,22 +646,10 @@ video {
   justify-content: center;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 
 .bg-black {
@@ -676,16 +660,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 
 .p-2 {
@@ -738,6 +712,10 @@ video {
 
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-xl {
@@ -805,14 +783,61 @@ h1 {
   font-family: 'Yeseva One', cursive;
 }
 
-.card:hover {
-  transform: rotateY(180deg);
+/* 
+TEST */
+
+.scroll-container {
+  max-width: 980px;
+  margin: auto;
+  padding: 20px 0px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background: #ad343e;
+}
+
+.card-flip {
+  perspective: 1000px;
+  display: flex;
+  /* total cards width + cards margin */
+  /* comment out and flip the last card to see the effect */
+  width: calc((400px * 3) + (20px * 6));
+}
+
+.flip {
+  min-width: 400px;
+  height: 400px;
+  margin: 20px;
+  position: relative;
+  transition: transform 1s;
   transform-style: preserve-3d;
 }
 
-.card-back {
+.isFlipped {
   transform: rotateY(180deg);
 }
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.front,
+  .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/* .card {
+
+    
+  } */
+
+/*   
+  .card-body {
+    background: #224d71;
+  } */
 
 /* TEXT ANIMATION */
 
@@ -852,29 +877,5 @@ h1 {
   to{
     opacity: 1;
     transform: perspective(500px) translate3d(0, 0, 0);
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:flex-row {
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

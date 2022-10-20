@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
+    <!-- NAV -->
     <header>
         <nav class="flex flex-row items-center justify-center w-full p-2">
             <div>
-
                 <a href="#about">About</a>
                 <a href="#home">
                     <span class="text-xl px-5"> H | B </span>
@@ -38,7 +37,6 @@
         </div>
 
         <!-- ABOUT -->
-
         <div class="flex flex-col h-screen" id="about">
             <div>
                 <p class="text-7xl bg-black text-white p-16">about me...</p>
@@ -63,7 +61,6 @@
         </div>
 
         <!-- PORTFOLIO -->
-        
         <div class="flex flex-col h-screen" id="portfolio">
             <div>
                 <p class="text-7xl bg-black text-white p-16">recent work...</p>
@@ -77,30 +74,113 @@
                 </p>                
             </div>
             <div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
-                        <div class="w-full h-80">
-                            <img class="object-center object-cover w-full h-full" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+                <!-- CARD GRID-->
+                <div class="scroll-container">
+                    <div class="card-flip" id="card1">
+                        <div class="flip">
+                          <!-- FRONT SIDE OF THE CARD -->
+                          <div class="front bg-white h-80">
+                            <div class="card h-80 flex flex-col items-center justify-center">
+                              <!-- <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&auto=format&fit=crop&w=450&q=80" class="card-img-top" alt="...">
+                              </div> -->
+                              <div class="card-body text-center">
+                                <h3>Slack Community Workshop</h3>
+                                <p>test</p>
+                                <button class="btn">Read more</button>
+                              </div>
+                            </div>
+                          </div>
+                  
+                          <!-- BACK SIDE -->
+                          <div class="back bg-white h-80">
+                            <div class="card">
+                              <div class="img-container">
+                                <img src="assets/images/Screen Shot 2022-10-15 at 9.46.54 AM.png" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card-body">
+                                <p class="p-2">Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
+                                <p class="p-2">Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
+                                <a href="#">View on Git Hub</a>
+                                <a href="#">View on </a>
+                              </div>
+                              <div class="card-footer text-center">
+                                <button class="btn">Read Less</button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
-                        <div class="w-full h-80">
-                            <img class="object-center object-cover w-full h-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+                            <div class="flip">
+                          <!-- FRONT SIDE OF THE CARD -->
+                          <div class="front">
+                            <div class="card">
+                              <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title text-light">Slack Community Workshop</h5>
+                                <p class="text-light"><strong class="text-light">Date:</strong> September 8, 2019 </p>
+                                <p class="text-light"><strong class="text-light">Time:</strong> 1:00 PM to 3:30 PM </p>
+                                <p class="text-light"><strong class="text-light">Venue:</strong> Witty Feed, Shekhar Central</p>
+                              </div>
+                              <div class="card-footer text-center">
+                                <button class="btn btn-warning">Read more</button>
+                              </div>
+                            </div>
+                          </div>
+                  
+                          <!-- BACK SIDE -->
+                          <div class="back">
+                            <div class="card">
+                              <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card-body">
+                                <p class="text-light">Amet omnis consectetur accusantium iusto. Iure quos porro nesciunt tempora accusantium, eaque iusto laudantium vero esse placeat nam incidunt cumque dolorem? Quibusdam?</p>
+                              </div>
+                              <div class="card-footer text-center">
+                                <button href="" class="btn btn-warning">View event page</button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
-                        <div class="w-full h-80">
-                            <img class="object-center object-cover w-full h-full" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
+                      
+                                <div class="flip">
+                          <!-- FRONT SIDE OF THE CARD -->
+                          <div class="front">
+                            <div class="card">
+                              <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title text-light">Slack Community Workshop</h5>
+                                <p class="text-light"><strong class="text-light">Date:</strong> September 8, 2019 </p>
+                                <p class="text-light"><strong class="text-light">Time:</strong> 1:00 PM to 3:30 PM </p>
+                                <p class="text-light"><strong class="text-light">Venue:</strong> Witty Feed, Shekhar Central</p>
+                              </div>
+                              <div class="card-footer text-center">
+                                <button class="btn btn-warning">Read more</button>
+                              </div>
+                            </div>
+                          </div>
+                  
+                          <!-- BACK SIDE -->
+                          <div class="back">
+                            <div class="card">
+                              <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=450&q=80" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card-body">
+                                <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet omnis consectetur accusantium iusto. Iure quos porro nesciunt tempora accusantium, eaque iusto laudantium vero esse placeat nam incidunt cumque dolorem? Quibusdam?</p>
+                              </div>
+                              <div class="card-footer text-center">
+                                <button href="" class="btn btn-warning">View event page</button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
-                        <div class="w-full h-80">
-                            <img class="object-center object-cover w-full h-full" src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80" alt="photo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                      </div>
+                  </div>	
 
         <!-- CONTACT -->
 
