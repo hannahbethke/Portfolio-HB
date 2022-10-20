@@ -8,18 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header>
-        <nav class="flex flex-row items-center justify-center w-full">
+        <nav class="flex flex-row items-center justify-center w-full p-2">
             <div>
-                <a href="#home">
-                    <span class="text-xl"> H | B </span>
-                </a>
+
                 <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <a href="#home">
+                    <span class="text-xl px-5"> H | B </span>
+                </a>
+                <a class="pr-2" href="#portfolio">Portfolio</a>
+                <a class="pr-2" href="#contact">Contact</a>
             </div>
         </nav>
     </header>
@@ -27,169 +29,116 @@
     <main>
         <!-- HOMEPAGE -->
         <div class="flex flex-col items-center justify-center h-screen" id="home">
-                <h1 class="text-6xl">
+                <h1 class="text-9xl" id="text">
                     Hannah Bethke
                 </h1>
                 <a href="#about">
                     Learn More
                 </a>
         </div>
+
         <!-- ABOUT -->
-        <div class="grid grid-cols-3 p-10 ml-10 w-screen h-full" id="about">
-            <img class="max-w-auto h-auto col-span-1 m-10" src="./assets/images/Bethke 2022.jpg" alt="Image of Hannah Bethke">
-            <div class="flex flex-col col-span-2 items-center m-10 p-10">
-                <h1 class="my-2.5">
-                    About Me
-                </h1>
-                <p class="p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus, eaque eos aut molestias consequuntur ducimus itaque libero placeat mollitia quae quasi, voluptate, rem facilis ea voluptas atque! Aliquid, et
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti, sapiente ipsa, inventore vel temporibus exercitationem animi recusandae commodi accusantium assumenda iure vitae atque nemo reiciendis voluptate suscipit impedit fugit!.
-                </p>
-                <p>
-                    Skills: 
-                </p>
+
+        <div class="flex flex-col h-screen" id="about">
+            <div>
+                <p class="text-7xl bg-black text-white p-16">about me...</p>
             </div>
-        </div>
-        <!-- PORTFOLIO -->
-        <div class="grid grid-cols-3 p-10 ml-10 h-screen" id="portfolio">
-            <div class="flex flex-col col-span1">
-                <h1 class="text-white">
-                    Hannah Bethke
-                </h1>
-            </div>
-            <div class="flex flex-col col-span-2 items-center">
-                <h1 class="text-white">
-                    Recent Work
-                </h1>
-                <div class="container grid grid-cols-2 gap-5 m-auto max-h-[45rem] overflow-auto" id="recentWork">
-
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                          <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                          </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                        </div>
-                      </div>
-                      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                          <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                          </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                        </div>
-                      </div>
-                      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                          <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                          </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                        </div>
-                      </div>
-                      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                          <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                          </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                        </div>
-                      </div>
-                    <!-- <div class="w-full rounded text-white">
-                        <img class="blur-lg" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image">
-                        <button>view</button>
-                    </div>
-                    <div class="w-full rounded">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image">
-                    </div>
-                    <div class="w-full rounded">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image">
-                    </div>
-                    <div class="w-full rounded">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image">
-                    </div> -->
-
-
-
-
+            <div class="grid grid-cols-3 px-10 w-screen h-full"> 
+                <img class="col-span-1 max-w-auto h-auto col-span-1 py-10 mb-10 " src="./assets/images/Bethke 2022.jpg" alt="Image of Hannah Bethke">
+                <div class="flex flex-col col-span-2 items-center m-10 p-10">
+                    <h1 class="my-2.5">
+                        About Me
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus, eaque eos aut molestias consequuntur ducimus itaque libero placeat mollitia quae quasi, voluptate, rem facilis ea voluptas atque! Aliquid, et
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti, sapiente ipsa, inventore vel temporibus exercitationem animi recusandae commodi accusantium assumenda iure vitae atque nemo reiciendis voluptate suscipit impedit fugit!.
+                    </p>
+                    <h1 class="my-2.5">
+                        Current Skills
+                    </h1>
+                    <p>
+                        HTML · JavaScript · CSS · Node.js · Express · EJS · Mongoose · MongoDB · PostgreSQL · React.js · Python · Django · Bootstrap · Bulma · Materialize · Tailwind · Sass
+                    </p>
                 </div>
             </div>
         </div>
+
+        <!-- PORTFOLIO -->
+        
+        <div class="flex flex-col h-screen" id="portfolio">
+            <div>
+                <p class="text-7xl bg-black text-white p-16">recent work...</p>
+            </div>
+            <div class="flex flex-col items-center justify-center p-6 mx-10 divide-y-2">
+                <h1 class="p-2">
+                    Projects
+                </h1>
+                <p class="divide-y-2 p-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit repellendus sint blanditiis possimus atque sequi architecto, eos minima expedita, reprehenderit vero repellat id sunt laborum, corporis aspernatur soluta saepe tempora.
+                </p>                
+            </div>
+            <div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
+                        <div class="w-full h-80">
+                            <img class="object-center object-cover w-full h-full" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+                        </div>
+                    </div>
+                    <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
+                        <div class="w-full h-80">
+                            <img class="object-center object-cover w-full h-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+                        </div>
+                    </div>
+                    <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
+                        <div class="w-full h-80">
+                            <img class="object-center object-cover w-full h-full" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
+                        </div>
+                    </div>
+                    <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
+                        <div class="w-full h-80">
+                            <img class="object-center object-cover w-full h-full" src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80" alt="photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- CONTACT -->
+
         <div class="flex flex-col items-center justify-center h-screen" id="contact">
-            <h1>
-                Hannah Bethke
-            </h1>
+            <div class="bg-black">
+                <p class="text-7xl text-white pt-16 px-16">contact me...</p>
+                <p class="text-xl text-white p-16">
+                    <span>
+                        <a class="text-xl" href="#">
+                            <span><i class="fa-sharp fa-solid fa-location-dot text-white pr-2"></i></span>
+                        </a>
+                    </span>
+                    I am based in Boulder, Colorado and am open to both local and remote work
+                </p>
+            </div>
+            <div class="p-10">
+                <a class="text-3xl pr-2" 
+                    href="https://www.linkedin.com/in/hannah-bethke/" 
+                    target="_blank" rel="noreferrer noopener">
+                    Linked In
+                    <span><i class="fa-brands fa-linkedin pl-2"></i></span>
+                </a>
+                <a class="text-3xl pr-2" 
+                    href="https://github.com/hannahbethke" 
+                    target="_blank" rel="noreferrer noopener">
+                    Git Hub
+                    <span><i class="fa-brands fa-square-github pl-2"></i></span>
+                </a>
+                <a class="text-3xl pr-2" 
+                    href="#"
+                    target="_blank" rel="noreferrer noopener">
+                    Resume
+                    <span><i class="fa-solid fa-file pl-2"></i></span>
+                </a>
+            </div>
+            </div>
         </div>
     </main>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
-
-
-
-<!-- <body>
-    <header>
-
-    </header>
-    <main class="flex flex-col items-center justify-center h-screen">
-        <div class="w-screen h-screen" id="#home">
-            <h1>
-                Hannah Bethke
-            </h1>
-            <a href="#about">
-                Learn More
-            </a>
-        </div>
-        <div class="grid grid-cols-3 p-10 ml-10" class="w-screen h-screen" id="#about">
-            <img class="max-w-auto h-auto col-span-1 m-10" src="/assets/images/Bethke 2022.jpg" alt="Image of Hannah Bethke">
-            <div class="flex flex-col col-span-2 items-center m-10 p-10">
-                <h1 class="my-2.5">
-                    About Me
-                </h1>
-                <p class="p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus, eaque eos aut molestias consequuntur ducimus itaque libero placeat mollitia quae quasi, voluptate, rem facilis ea voluptas atque! Aliquid, et
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti, sapiente ipsa, inventore vel temporibus exercitationem animi recusandae commodi accusantium assumenda iure vitae atque nemo reiciendis voluptate suscipit impedit fugit!.</p>
-        </div>
-        </div>
-        <div id="#portfolio">
-            <h1>
-                Recent Work
-            </h1>
-        </div>
-        <div id="#contact">
-            <h1>
-                Hannah Bethke
-            </h1>
-        </div>
-    </main>
-    <footer>
-
-    </footer>
-</body> -->
