@@ -55,10 +55,10 @@ TEST */
 
   
   .scroll-container {
-    max-width: 980px;
+    max-width: full;
     margin: auto;
     padding: 20px 0px;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     background: #ad343e;
   }

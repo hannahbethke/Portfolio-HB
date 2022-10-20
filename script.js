@@ -1,3 +1,5 @@
+// Card Flip   
+
 const card = document.querySelector(".flip");
 const btns = document.querySelectorAll(".btn");
 
@@ -6,6 +8,7 @@ btns.forEach((btn) => {
     target.closest('.flip').classList.toggle("isFlipped");
   });
 });
+
   // Animate Lettering
 
   let text = document.getElementById('text');
