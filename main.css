@@ -1,20 +1,10 @@
-@import "tailwindcss/base";
-
-@import "tailwindcss/components";
-
-@import "tailwindcss/utilities";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 html {
     scroll-behavior: smooth;
   }
 
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: x-large;
 }
   
 #home {
@@ -32,6 +22,18 @@ body {
     min-height: 100vh; */
 }
 
+.card-img-top {
+    height: 231px;
+    min-width: 400px;
+    overflow: hidden;
+    border-bottom: solid 1px gray;
+}
+
+.card-body-back {
+    height: 99px;
+    border-bottom: solid 1px gray;
+}
+
 #contact {
     background-color: #F0EFED;
     /* width: 100%;
@@ -46,8 +48,9 @@ nav {
     justify-content: space-between;
 }
 
-h1 {
-    font-family: 'Yeseva One', cursive;
+h1, h3, nav {
+    /* font-family: 'Yeseva One', cursive; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* 
@@ -56,11 +59,11 @@ TEST */
   
   .scroll-container {
     max-width: full;
-    margin: auto;
-    padding: 20px 0px;
+    /* margin: auto; */
+    margin-bottom: auto;
     overflow-x: auto;
     overflow-y: hidden;
-    background: #ad343e;
+    background: teal;
   }
   
   .card-flip {
@@ -96,18 +99,9 @@ TEST */
     backface-visibility: hidden;
   }
   
-  /* .card {
-
-    
-  } */
-/*   
-  .card-body {
-    background: #224d71;
-  } */
-  
 
   /* TEXT ANIMATION */
-
+/* 
   #text {
     width: 70%;
     font-size: 30px;
@@ -131,4 +125,4 @@ TEST */
         opacity: 1;
         transform: perspective(500px) translate3d(0, 0, 0);
     }
-}
+} */
