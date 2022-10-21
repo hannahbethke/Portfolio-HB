@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="main.css" rel="stylesheet">
-<!-- test -->
+
+<!-- Font -->
 <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> -->
@@ -15,16 +16,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200&display=swap" rel="stylesheet">
 
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Yeseva+One&display=swap" rel="stylesheet"> -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Yeseva+One&display=swap" rel="stylesheet"> -->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <!-- NAV -->
     <header>
-        <nav class="flex flex-row items-center justify-center w-full p-2 font-bold">
+        <nav class="flex flex-row items-center justify-center w-full p-2">
             <div>
                 <a href="#about">About</a>
                 <a href="#home">
@@ -39,10 +44,11 @@
     <main>
         <!-- HOMEPAGE -->
         <div class="flex flex-col items-center justify-center h-screen" id="home">
-            <h1 class="text-9xl" id="text">
+            <h1 class="text-7xl" data-aos="fade-right" data-aos-duration="2000" id="text">
                 Hannah Bethke
             </h1>
-            <a class="btn bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 m-10 border border-blue-500 hover:border-transparent rounded" href="#about">
+            <p data-aos="fade-left" data-aos-duration="900" data-aos-delay="300">Software Engineer | Web Developer</p>
+            <a class="btn bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 m-10 border border-black hover:border-transparent rounded" href="#about">
                 Learn More
             </a>
         </div>
@@ -53,15 +59,15 @@
                 <p class="text-7xl bg-black text-white p-16">about me...</p>
             </div>
             <div class="grid grid-cols-3 p-10 w-screen h-full"> 
-                <img class="col-span-1 col-span-1 shadow-2xl rounded-lg" src="./assets/images/Bethke 2022.jpg" alt="Image of Hannah Bethke">
-                <div class="flex flex-col col-span-2 items-center m-10 p-10">
-                    <h1 class="my-2.5">
+                <img data-aos="fade-up-right" data-aos-duration="1000" class="col-span-1 col-span-1 shadow-2xl rounded-lg" src="./assets/images/Bethke 2022.jpg" alt="Image of Hannah Bethke">
+                <div data-aos="fade-up-left" data-aos-duration="1600" class="flex flex-col col-span-2 items-center m-10 p-10">
+                    <h1 class="font-black my-2.5">
                         About Me
                     </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus, eaque eos aut molestias consequuntur ducimus itaque libero placeat mollitia quae quasi, voluptate, rem facilis ea voluptas atque! Aliquid, et
+                    <p>Thought ful about writing the best code with the least amount of code, disability compliant, clean clear easy to read, modern design, building a deeper understanding of the craft, start becoming a master of the trade. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus, eaque eos aut molestias consequuntur ducimus itaque libero placeat mollitia quae quasi, voluptate, rem facilis ea voluptas atque! Aliquid, et
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti, sapiente ipsa, inventore vel temporibus exercitationem animi recusandae commodi accusantium assumenda iure vitae atque nemo reiciendis voluptate suscipit impedit fugit!.
                     </p>
-                    <h1 class="my-2.5">
+                    <h1 class="font-black my-2.5">
                         Current Skills
                     </h1>
                     <p>
@@ -76,17 +82,17 @@
             <div>
                 <p class="text-7xl bg-black text-white p-16">recent work...</p>
             </div>
-            <div class="flex flex-col items-center justify-center p-6 mx-10 divide-y-2">
-                <h1 class="p-2">
+            <div data-aos="fade-left" data-aos-duration="900" class="flex flex-col items-center justify-center p-6 mx-10 divide-y-2">
+                <h1 class="font-black p-2">
                     Projects
                 </h1>
                 <p class="divide-y-2 p-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit repellendus sint blanditiis possimus atque sequi architecto, eos minima expedita, reprehenderit vero repellat id sunt laborum, corporis aspernatur soluta saepe tempora.
+                    Each of the following projects will be enhanced in the future with elevated styling and optimized code, both for readability and performance. I always look for ways to improve the way I plan, write code, design and style an app or website. 
                 </p>                
             </div>
             <div>
                 <!-- CARD GRID-->
-                <div class="scroll-container">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="scroll-container">
                     <div class="card-flip">
 
                         <div class="flip" id="card1">
@@ -94,11 +100,13 @@
                             <div class="front bg-white h-96 rounded-lg">
                                 <div class="card h-96 flex flex-col items-center justify-center">
                                     <div class="card-body text-center">
-                                        <h3>Slack Community Workshop</h3>
-                                        <p>test</p>
+                                        <h3 class="font-black">Songs to See</h3>                                    
+                                        <p class="text-base pt-3">Tech Used:</p>
+                                        <p class="text-base p-2">Python, Django, PostgreSQL, Docker, SeatGeek/Spotify API, HTML5/JS/CSS3 & Bootstrap</p>
+                                        <p class="text-base p-2">(Deployed on Railway)</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 m-10 border border-blue-500 hover:border-transparent rounded">Read more</button>
+                                        <button class="btn bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 m-10 border border-black hover:border-transparent rounded">Read more</button>
                                     </div>
                                 </div>
                             </div>
@@ -109,15 +117,18 @@
                                         <img src="assets/images/project_4.png" class="card-img-top rounded-t-lg" alt="project_4">
                                     </div>
                                     <div class="card-body-back">
-                                        <p class="px-2">sdf</p>
-                                        <p>Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
+                                        <p class="px-2">This team project consists of an app that allows users to search for upcoming concerts in their area, view performer details, generate a suggested playlist of songs and login to create a personalized profile.</p>                                    
                                     </div>
                                     <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
                                         <a href="#">Launch Application</a>
-                                        <a href="#">View on Git Hub</a>
+                                        <a 
+                                            href="https://github.com/hannahbethke/project-four.git"
+                                            target="_blank" rel="noreferrer noopener">
+                                            View on Git Hub
+                                        </a> 
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn bg-blue-500 font-semibold text-white py-2 px-4 rounded">Read Less</button>
+                                        <button class="btn bg-black font-semibold text-white py-2 px-4 rounded">Read Less</button>
                                     </div>
                                 </div>
                             </div>
@@ -128,11 +139,13 @@
                             <div class="front bg-white h-96 rounded-lg">
                                 <div class="card h-96 flex flex-col items-center justify-center">
                                     <div class="card-body text-center">
-                                        <h3>Slack Community Workshop</h3>
-                                        <p>test</p>
+                                        <h3 class="font-black">Artist Portfolio</h3>
+                                        <p class="text-base pt-3">Tech Used:</p>
+                                        <p class="text-base p-2">React, Express, Mongoose, MongoDB, Node, & Material UI</p>
+                                        <p class="text-base p-2">(Deployed on Railway)</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 m-10 border border-blue-500 hover:border-transparent rounded">Read more</button>
+                                        <button class="btn bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 m-10 border border-black hover:border-transparent rounded">Read more</button>
                                     </div>
                                 </div>
                             </div>
@@ -143,15 +156,14 @@
                                         <img src="assets/images/project_3.png" class="card-img-top rounded-t-lg" alt="project_3">
                                     </div>
                                     <div class="card-body-back">
-                                        <p class="px-2">Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
-                                        <p>Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
+                                        <p class="px-2">This project is a full MERN stack, mock portfolio for a graphic artist.  The site is designed to be managed by the artist through a hidden administrative login.</p>                                        \
                                     </div>
                                     <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
                                         <a href="#">Launch Application</a>
                                         <a href="#">View on Git Hub</a>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn bg-blue-500 font-semibold text-white py-2 px-4 rounded">Read Less</button>
+                                        <button class="btn bg-black font-semibold text-white py-2 px-4 rounded">Read Less</button>
                                     </div>
                                 </div>
                             </div>
@@ -162,11 +174,13 @@
                             <div class="front bg-white h-96 rounded-lg">
                                 <div class="card h-96 flex flex-col items-center justify-center">
                                     <div class="card-body text-center">
-                                        <h3>Slack Community Workshop</h3>
-                                        <p>test</p>
+                                        <h3 class="font-black">Mock Employee Portal</h3>
+                                        <p class="text-base pt-3">Tech Used:</p>
+                                        <p class="text-base p-2">Python, Django, PostgreSQL, HTML5/JS/CSS3, & Bootstrap</p>
+                                        <p class="text-base p-2">(Deployed on Netlify)</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 m-10 border border-blue-500 hover:border-transparent rounded">Read more</button>
+                                        <button class="btn bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 m-10 border border-black hover:border-transparent rounded">Read more</button>
                                     </div>
                                 </div>
                             </div>
@@ -177,15 +191,18 @@
                                         <img src="assets/images/project_2.png" class="card-img-top rounded-t-lg" alt="project_2">
                                     </div>
                                     <div class="card-body-back">
-                                        <p class="px-2">Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
-                                        <p>Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
+                                        <p class="px-2">This is a mock employee portal that allows landscaping employees to complete and submit timesheets, access pay data, calendar and bulletin board posts, plus weather and emergency resources.</p>
                                     </div>
                                     <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
                                         <a href="#">Launch Application</a>
-                                        <a href="#">View on Git Hub</a>
+                                        <a 
+                                            href="https://github.com/hannahbethke/Project-Two.git"
+                                            target="_blank" rel="noreferrer noopener">
+                                            View on Git Hub
+                                        </a>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn bg-blue-500 font-semibold text-white py-2 px-4 rounded">Read Less</button>
+                                        <button class="btn bg-black font-semibold text-white py-2 px-4 rounded">Read Less</button>
                                     </div>
                                 </div>
                             </div>
@@ -196,11 +213,13 @@
                             <div class="front bg-white h-96 rounded-lg">
                                 <div class="card h-96 flex flex-col items-center justify-center">
                                     <div class="card-body text-center">
-                                        <h3>Slack Community Workshop</h3>
-                                        <p>test</p>
+                                        <h3 class="font-black" >Cocktail Hour</h3>
+                                        <p class="text-base pt-3">Tech Used:</p>
+                                        <p class="text-base p-2">HTML5/JS/CSS3, Cocktail DB API, Bootstrap, & Google Fonts</p>
+                                        <p class="text-base p-2">(Deployed on Netlify)</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 m-10 border border-blue-500 hover:border-transparent rounded">Read more</button>
+                                        <button class="btn bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 m-10 border border-black hover:border-transparent rounded">Read more</button>
                                     </div>
                                 </div>
                             </div>
@@ -211,15 +230,57 @@
                                         <img src="assets/images/project_1.png" class="card-img-top rounded-t-lg" alt="project_1">
                                     </div>
                                     <div class="card-body-back">
+                                        <p class="px-2">This project is a simple web application that allows users to search for cocktail recipes by name or by ingredient.  Users can also search for information about most commonly used spirits.</p>
+                                    </div>
+                                    <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
+                                        <a 
+                                            href="https://guileless-profiterole-9b97c3.netlify.app"
+                                            target="_blank" rel="noreferrer noopener">
+                                            Launch Application
+                                        </a>
+                                        <a 
+                                            href="https://github.com/hannahbethke/Project-One.git"
+                                            target="_blank" rel="noreferrer noopener">
+                                            View on Git Hub
+                                        </a>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <button class="btn bg-black font-semibold text-white py-2 px-4 rounded">Read Less</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip" id="card5">
+                            <!-- FRONT SIDE OF THE CARD -->
+                            <div class="front bg-white h-96 rounded-lg">
+                                <div class="card h-96 flex flex-col items-center justify-center">
+                                    <div class="card-body text-center">
+                                        <h3 class="font-black">Beach Collector</h3>
+                                        <p class="text-base pt-3">Tech Used:</p>
+                                        <p class="text-base p-2">Python, Django, PostgreSQL, HTML5/JS/CSS3, & Materialize</p>
+                                        <p class="text-base p-2">(Deployed on Railway)</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <button class="btn bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 m-10 border border-black hover:border-transparent rounded">Read more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- BACK SIDE -->
+                            <div class="back bg-white h-96 rounded-lg text-base">
+                                <div class="card h-96">
+                                    <div class="img-container">
+                                        <img src="assets/images/project_2.png" class="card-img-top rounded-t-lg" alt="project_5">
+                                    </div>
+                                    <div class="card-body-back">
                                         <p class="px-2">Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
-                                        <p>Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
                                     </div>
                                     <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
                                         <a href="#">Launch Application</a>
                                         <a href="#">View on Git Hub</a>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn bg-blue-500 font-semibold text-white py-2 px-4 rounded">Read Less</button>
+                                        <button class="btn bg-black font-semibold text-white py-2 px-4 rounded">Read Less</button>
                                     </div>
                                 </div>
                             </div>
@@ -227,15 +288,19 @@
 
                     </div>
                 </div>	
-
+        <!-- Card Grid End -->
+        
         <!-- CONTACT -->
 
         <div class="flex flex-col items-center justify-center min-h-screen" id="contact">
-            <div class="bg-black">
+            <div data-aos="zoom-in" data-aos-duration="700" class="bg-black">
                 <p class="text-7xl text-white pt-16 px-16">contact me...</p>
-                <p class="text-xl text-white p-16">
+                <p class="text-2xl text-white p-16">
                     <span>
-                        <a class="text-xl" href="#">
+                        <a 
+                        class="text-xl" 
+                        href="https://www.google.com/maps/place/Boulder,+CO/@40.0293099,-105.2399774,12z/data=!3m1!4b1!4m5!3m4!1s0x876b8d4e278dafd3:0xc8393b7ca01b8058!8m2!3d40.0149856!4d-105.2705456"
+                        target="_blank" rel="noreferrer noopener">
                             <span><i class="fa-sharp fa-solid fa-location-dot text-white pr-2"></i></span>
                         </a>
                     </span>
@@ -266,5 +331,8 @@
         </div>
     </main>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
