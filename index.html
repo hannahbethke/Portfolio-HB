@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="main.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- test -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Yeseva+One&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <!-- NAV -->
     <header>
-        <nav class="flex flex-row items-center justify-center w-full p-2">
+        <nav class="flex flex-row items-center justify-center w-full p-2 font-bold">
             <div>
                 <a href="#about">About</a>
                 <a href="#home">
-                    <span class="text-xl px-5"> H | B </span>
+                    <span class="text-3xl px-5 font-black"> H | B </span>
                 </a>
                 <a class="pr-2" href="#portfolio">Portfolio</a>
                 <a class="pr-2" href="#contact">Contact</a>
@@ -28,21 +39,21 @@
     <main>
         <!-- HOMEPAGE -->
         <div class="flex flex-col items-center justify-center h-screen" id="home">
-                <h1 class="text-9xl" id="text">
-                    Hannah Bethke
-                </h1>
-                <a href="#about">
-                    Learn More
-                </a>
+            <h1 class="text-9xl" id="text">
+                Hannah Bethke
+            </h1>
+            <a class="btn bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 m-10 border border-blue-500 hover:border-transparent rounded" href="#about">
+                Learn More
+            </a>
         </div>
 
         <!-- ABOUT -->
-        <div class="flex flex-col h-screen" id="about">
+        <div class="flex flex-col min-h-screen" id="about">
             <div>
                 <p class="text-7xl bg-black text-white p-16">about me...</p>
             </div>
-            <div class="grid grid-cols-3 px-10 w-screen h-full"> 
-                <img class="col-span-1 max-w-auto h-auto col-span-1 py-10 mb-10 " src="./assets/images/Bethke 2022.jpg" alt="Image of Hannah Bethke">
+            <div class="grid grid-cols-3 p-10 w-screen h-full"> 
+                <img class="col-span-1 col-span-1 shadow-2xl rounded-lg" src="./assets/images/Bethke 2022.jpg" alt="Image of Hannah Bethke">
                 <div class="flex flex-col col-span-2 items-center m-10 p-10">
                     <h1 class="my-2.5">
                         About Me
@@ -61,7 +72,7 @@
         </div>
 
         <!-- PORTFOLIO -->
-        <div class="flex flex-col h-screen" id="portfolio">
+        <div class="flex flex-col min-h-screen" id="portfolio">
             <div>
                 <p class="text-7xl bg-black text-white p-16">recent work...</p>
             </div>
@@ -80,8 +91,8 @@
 
                         <div class="flip" id="card1">
                             <!-- FRONT SIDE OF THE CARD -->
-                            <div class="front bg-white h-80 rounded-lg">
-                                <div class="card h-80 flex flex-col items-center justify-center">
+                            <div class="front bg-white h-96 rounded-lg">
+                                <div class="card h-96 flex flex-col items-center justify-center">
                                     <div class="card-body text-center">
                                         <h3>Slack Community Workshop</h3>
                                         <p>test</p>
@@ -92,19 +103,18 @@
                                 </div>
                             </div>
                             <!-- BACK SIDE -->
-                            <div class="back bg-white h-80 rounded-lg">
-                                <div class="card">
+                            <div class="back bg-white h-96 rounded-lg text-base">
+                                <div class="card h-96">
                                     <div class="img-container">
-                                        <img src="assets/images/Screen Shot 2022-10-15 at 9.46.54 AM.png" class="card-img-top  rounded-lg" alt="...">
+                                        <img src="assets/images/project_4.png" class="card-img-top rounded-t-lg" alt="project_4">
                                     </div>
-                                    <div class="card-body">
-                                        <p class="px-2">Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
+                                    <div class="card-body-back">
+                                        <p class="px-2">sdf</p>
                                         <p>Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
-                                        <hr>
-                                        <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
-                                            <a href="#">Launch Application</a>
-                                            <a href="#">View on Git Hub</a>
-                                        </div>
+                                    </div>
+                                    <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
+                                        <a href="#">Launch Application</a>
+                                        <a href="#">View on Git Hub</a>
                                     </div>
                                     <div class="card-footer text-center">
                                         <button class="btn bg-blue-500 font-semibold text-white py-2 px-4 rounded">Read Less</button>
@@ -115,8 +125,8 @@
 
                         <div class="flip" id="card2">
                             <!-- FRONT SIDE OF THE CARD -->
-                            <div class="front bg-white h-80 rounded-lg">
-                                <div class="card h-80 flex flex-col items-center justify-center">
+                            <div class="front bg-white h-96 rounded-lg">
+                                <div class="card h-96 flex flex-col items-center justify-center">
                                     <div class="card-body text-center">
                                         <h3>Slack Community Workshop</h3>
                                         <p>test</p>
@@ -127,19 +137,18 @@
                                 </div>
                             </div>
                             <!-- BACK SIDE -->
-                            <div class="back bg-white h-80 rounded-lg">
-                                <div class="card">
+                            <div class="back bg-white h-96 rounded-lg text-base">
+                                <div class="card h-96">
                                     <div class="img-container">
-                                        <img src="assets/images/Screen Shot 2022-10-15 at 9.46.54 AM.png" class="card-img-top  rounded-lg" alt="...">
+                                        <img src="assets/images/project_3.png" class="card-img-top rounded-t-lg" alt="project_3">
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body-back">
                                         <p class="px-2">Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
                                         <p>Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
-                                        <hr>
-                                        <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
-                                            <a href="#">Launch Application</a>
-                                            <a href="#">View on Git Hub</a>
-                                        </div>
+                                    </div>
+                                    <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
+                                        <a href="#">Launch Application</a>
+                                        <a href="#">View on Git Hub</a>
                                     </div>
                                     <div class="card-footer text-center">
                                         <button class="btn bg-blue-500 font-semibold text-white py-2 px-4 rounded">Read Less</button>
@@ -150,8 +159,8 @@
                       
                         <div class="flip" id="card3">
                             <!-- FRONT SIDE OF THE CARD -->
-                            <div class="front bg-white h-80 rounded-lg">
-                                <div class="card h-80 flex flex-col items-center justify-center">
+                            <div class="front bg-white h-96 rounded-lg">
+                                <div class="card h-96 flex flex-col items-center justify-center">
                                     <div class="card-body text-center">
                                         <h3>Slack Community Workshop</h3>
                                         <p>test</p>
@@ -162,19 +171,18 @@
                                 </div>
                             </div>
                             <!-- BACK SIDE -->
-                            <div class="back bg-white h-80 rounded-lg">
-                                <div class="card">
+                            <div class="back bg-white h-96 rounded-lg text-base">
+                                <div class="card h-96">
                                     <div class="img-container">
-                                        <img src="assets/images/Screen Shot 2022-10-15 at 9.46.54 AM.png" class="card-img-top  rounded-lg" alt="...">
+                                        <img src="assets/images/project_2.png" class="card-img-top rounded-t-lg" alt="project_2">
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body-back">
                                         <p class="px-2">Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
                                         <p>Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
-                                        <hr>
-                                        <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
-                                            <a href="#">Launch Application</a>
-                                            <a href="#">View on Git Hub</a>
-                                        </div>
+                                    </div>
+                                    <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
+                                        <a href="#">Launch Application</a>
+                                        <a href="#">View on Git Hub</a>
                                     </div>
                                     <div class="card-footer text-center">
                                         <button class="btn bg-blue-500 font-semibold text-white py-2 px-4 rounded">Read Less</button>
@@ -185,8 +193,8 @@
 
                         <div class="flip" id="card4">
                             <!-- FRONT SIDE OF THE CARD -->
-                            <div class="front bg-white h-80 rounded-lg">
-                                <div class="card h-80 flex flex-col items-center justify-center">
+                            <div class="front bg-white h-96 rounded-lg">
+                                <div class="card h-96 flex flex-col items-center justify-center">
                                     <div class="card-body text-center">
                                         <h3>Slack Community Workshop</h3>
                                         <p>test</p>
@@ -197,19 +205,18 @@
                                 </div>
                             </div>
                             <!-- BACK SIDE -->
-                            <div class="back bg-white h-80 rounded-lg">
-                                <div class="card">
+                            <div class="back bg-white h-96 rounded-lg text-base">
+                                <div class="card h-96">
                                     <div class="img-container">
-                                        <img src="assets/images/Screen Shot 2022-10-15 at 9.46.54 AM.png" class="card-img-top  rounded-lg" alt="...">
+                                        <img src="assets/images/project_1.png" class="card-img-top rounded-t-lg" alt="project_1">
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body-back">
                                         <p class="px-2">Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
                                         <p>Eius animi ducimus, modi officia est assumenda adipisci a qui fuga nobis accusantium.</p>
-                                        <hr>
-                                        <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
-                                            <a href="#">Launch Application</a>
-                                            <a href="#">View on Git Hub</a>
-                                        </div>
+                                    </div>
+                                    <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
+                                        <a href="#">Launch Application</a>
+                                        <a href="#">View on Git Hub</a>
                                     </div>
                                     <div class="card-footer text-center">
                                         <button class="btn bg-blue-500 font-semibold text-white py-2 px-4 rounded">Read Less</button>
@@ -218,13 +225,12 @@
                             </div>
                         </div>
 
-
                     </div>
                 </div>	
 
         <!-- CONTACT -->
 
-        <div class="flex flex-col items-center justify-center h-screen" id="contact">
+        <div class="flex flex-col items-center justify-center min-h-screen" id="contact">
             <div class="bg-black">
                 <p class="text-7xl text-white pt-16 px-16">contact me...</p>
                 <p class="text-xl text-white p-16">
