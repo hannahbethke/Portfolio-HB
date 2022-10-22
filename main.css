@@ -6,13 +6,18 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: larger;
 }
-  
-#home {
-    /* background-color: #F0EFED; */
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.home-image {
+    background-image: url("assets/images/befunky_2022-9-4_16-31-3.jpg");
+    background-repeat:repeat;
+    background-size:contain;
     /* width: 100%;
     min-height: 100vh; */
+}
+
+#about {
+    background-color: #F3F3F3;
+    overflow-y: hidden;
 }
 
 #portfolio {
@@ -20,6 +25,7 @@ body {
     /* background-color: black; */
     /* width: 100%;
     min-height: 100vh; */
+
 }
 
 .card-img-top {
