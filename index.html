@@ -2,59 +2,47 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="main.css" rel="stylesheet">
-
-    <!-- Font -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200&display=swap" rel="stylesheet">
-
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Yeseva+One&display=swap" rel="stylesheet"> -->
-
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200&display=swap" 
+        rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>HB Portfolio</title>
 </head>
 <body>
-
     <!-- NAV -->
     <header>
         <nav class="flex flex-row items-center justify-center w-full p-2">
-            <div>
-                <a href="#about">About</a>
-                <a href="#home">
-                    <span class="text-3xl px-5 font-black"> H | B </span>
-                </a>
-                <a class="pr-5" href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </div>
+            <a href="#about">About</a>
+            <a href="#home">
+                <span class="text-3xl px-5 font-black"> H | B </span>
+            </a>
+            <a class="pr-5" href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-
     <main>
         <!-- HOMEPAGE -->
-        <div class="flex flex-col justify-between h-screen" id="home">
-            <div class="flex flex-col items-left justify-left mt-52 m-52">
-                <h1 class="text-7xl" data-aos="fade-right" data-aos-duration="2000" id="text">
-                    Hannah Bethke
-                </h1>
-                <p class="text-3xl p-10" data-aos="fade-left" data-aos-duration="900" data-aos-delay="300">
-                    Software Engineer | Web Developer
-                </p>
-            </div>
-            <div class="flex object-bottom home-image h-full w-full">
-                <!-- <img class="mt-20" src="assets/images/befunky_2022-9-4_16-31-3.jpg" alt="Image"> -->
-            </div>
+        <div class="flex flex-col justify-center items-left h-screen ml-52" id="home">
+            <h1 class="text-7xl" data-aos="fade-right" data-aos-duration="2000" id="text">
+                Hannah Bethke
+            </h1>
+            <p class="text-3xl p-10" data-aos="fade-left" data-aos-duration="900" data-aos-delay="300">
+                Software Engineer | Web Developer
+            </p>
+            <p>I make stuff plus sometimes also things...</p>
         </div>
 
         <!-- ABOUT -->
@@ -68,8 +56,10 @@
                     <h1 class="font-black my-2.5">
                         About Me
                     </h1>
-                    <p>Tbuilding a deeper understanding of the craft, start becoming a master of the trade. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus, eaque eos aut molestias consequuntur ducimus itaque libero placeat mollitia quae quasi, voluptate, rem facilis ea voluptas atque! Aliquid, et
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti, sapiente ipsa, inventore vel temporibus exercitationem animi recusandae commodi accusantium assumenda iure vitae atque nemo reiciendis voluptate suscipit impedit fugit!.
+                    <p>About
+                        Hello! My name is Hannah and I'm a Full Stack Software Engineer and General Assembly student with a creative eye for design and a natural inclination 
+                        for problem solving. Fueled by my 20+ years as a professional dancer as well as my six years of experience in managerial roles, 
+                        I'm driven to deliver unique and stylish layouts, clear and concise code, and out-of-the-box solutions to optimize workflows and efficiencies.
                     </p>
                     <h1 class="font-black my-2.5">
                         Current Skills
@@ -94,7 +84,7 @@
                     Each of the following projects will be enhanced in the future with elevated styling and optimized code. 
                     My goal is to write code that is concise, easily readable and performs well. 
                     I use forward thinking to anticipate and solve a problem before it arises and continue to look for ways to improve the way I plan, 
-                    design, and style a project, whether workikng with a team or on my own. 
+                    design, and style a project, whether working with a team or on my own. 
                 </p>                
             </div>
             <div>
@@ -109,7 +99,7 @@
                                     <div class="card-body text-center">
                                         <h3 class="font-black">Songs to See</h3>                                    
                                         <p class="text-base pt-3">Tech Used:</p>
-                                        <p class="text-base p-2">Python, Django, PostgreSQL, Docker, SeatGeek/Spotify API, HTML5/JS/CSS3, & Bootstrap</p>
+                                        <p class="text-base p-2">Python, Django, PostgreSQL, Docker, SeatGeek/Spotify API, HTML5/JS/CSS3 & Bootstrap</p>
                                         <p class="text-base p-2">(Deployed on Railway)</p>
                                     </div>
                                     <div class="card-footer text-center">
@@ -124,7 +114,7 @@
                                         <img src="assets/images/project_4.png" class="card-img-top rounded-t-lg" alt="project_4">
                                     </div>
                                     <div class="card-body-back">
-                                        <p class="px-2">This team project consists of an app that allows users to search for upcoming concerts in their area, view performer details, generate a suggested playlist of songs and login to create a personalized profile.</p>                                    
+                                        <p class="px-2">This app that allows users to search for upcoming concerts in their area, view performer details, generate a suggested playlist of songs and login to create a personalized profile.</p>                                    
                                     </div>
                                     <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
                                         <a href="#">Launch Application</a>
@@ -148,7 +138,7 @@
                                     <div class="card-body text-center">
                                         <h3 class="font-black">Artist Portfolio</h3>
                                         <p class="text-base pt-3">Tech Used:</p>
-                                        <p class="text-base p-2">React, Express, Mongoose, MongoDB, Node, & Material UI</p>
+                                        <p class="text-base p-2">React, Express, Mongoose, MongoDB, Node & Material UI</p>
                                         <p class="text-base p-2">(Deployed on Railway)</p>
                                     </div>
                                     <div class="card-footer text-center">
@@ -183,7 +173,7 @@
                                     <div class="card-body text-center">
                                         <h3 class="font-black">Mock Employee Portal</h3>
                                         <p class="text-base pt-3">Tech Used:</p>
-                                        <p class="text-base p-2">Python, Django, PostgreSQL, HTML5/JS/CSS3, & Bootstrap</p>
+                                        <p class="text-base p-2">Express/Express-EJS, Mongoose, MongoDB, Bcrypt, Sessions, HTML, CSS & Bulma</p>
                                         <p class="text-base p-2">(Deployed on Netlify)</p>
                                     </div>
                                     <div class="card-footer text-center">
@@ -198,7 +188,7 @@
                                         <img src="assets/images/project_2.png" class="card-img-top rounded-t-lg" alt="project_2">
                                     </div>
                                     <div class="card-body-back">
-                                        <p class="px-2">This is a mock employee portal that allows landscaping employees to complete and submit timesheets, access pay data, calendar and bulletin board posts, plus weather and emergency resources.</p>
+                                        <p class="px-2">This is a mock employee portal that allows landscaping employees to login, complete and submit timesheets, access pay data, calendar and bulletin board posts, plus weather and emergency resources.</p>
                                     </div>
                                     <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
                                         <a href="#">Launch Application</a>
@@ -237,7 +227,7 @@
                                         <img src="assets/images/project_1.png" class="card-img-top rounded-t-lg" alt="project_1">
                                     </div>
                                     <div class="card-body-back">
-                                        <p class="px-2">This project is a simple web application that allows users to search for cocktail recipes by name or by ingredient.  Users can also search for information about most commonly used spirits.</p>
+                                        <p class="px-2">This project is a simple web application that allows users to search for cocktail recipes by name or by ingredient.  Users can also search for information about most commonly enjoyed spirits.</p>
                                     </div>
                                     <div class="links text-center flex flex-row justify-evenly text-lg font-semibold p-2">
                                         <a 
@@ -300,7 +290,7 @@
         <!-- CONTACT -->
 
         <div class="flex flex-col items-center justify-center min-h-screen" id="contact">
-            <div data-aos="zoom-in" data-aos-duration="700" class="bg-black">
+            <div data-aos="zoom-in" data-aos-duration="900" class="bg-black">
                 <p class="text-7xl text-white pt-16 px-16">contact me...</p>
                 <p class="text-2xl text-white p-16">
                     <span>
@@ -328,7 +318,7 @@
                     <span><i class="fa-brands fa-square-github pl-2"></i></span>
                 </a>
                 <a class="text-3xl pr-2" 
-                    href="#"
+                    href="assets/images/Bethke, Resume 2022.pdf"
                     target="_blank" rel="noreferrer noopener">
                     Resume
                     <span><i class="fa-solid fa-file pl-2"></i></span>

@@ -7,25 +7,21 @@ body {
     font-size: larger;
 }
 
-.home-image {
-    background-image: url("assets/images/befunky_2022-9-4_16-31-3.jpg");
-    background-repeat:repeat;
-    background-size:contain;
-    /* width: 100%;
-    min-height: 100vh; */
+#home {
+    background-image: url("assets/images/befunky_2.jpg");
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: bottom right;
 }
 
 #about {
-    background-color: #F3F3F3;
+    background-color: #e9dedfea;
+    /* background-color: #E4DBDC; */
     overflow-y: hidden;
 }
 
 #portfolio {
-    /* background-color: #605E5E; */
     /* background-color: black; */
-    /* width: 100%;
-    min-height: 100vh; */
-
 }
 
 .card-img-top {
@@ -41,7 +37,8 @@ body {
 }
 
 #contact {
-    background-color: #F0EFED;
+    background-color: #fff8f6;
+    /* background-color: #F0EFED; */
     /* width: 100%;
     min-height: 100vh; */
 }
@@ -64,12 +61,12 @@ TEST */
 
   
   .scroll-container {
-    max-width: full;
-    /* margin: auto; */
+    max-width: 100%;
     margin-bottom: auto;
     overflow-x: auto;
     overflow-y: hidden;
-    background: teal;
+    /* background: teal; */
+    background-color: rgb(55, 55, 55);
   }
   
   .card-flip {
@@ -106,32 +103,6 @@ TEST */
   }
   
   footer {
-    background-color: teal;
+    /* background-color: teal; */
+    background-color: rgb(55, 55, 55);
   }
-
-  /* TEXT ANIMATION */
-/* 
-  #text {
-    width: 70%;
-    font-size: 30px;
-    display: block;
-    text-align: center;
-}
-
-.char{
-    font-size: 40px;
-    height: 40px;
-    animation: an 2s ease-out 1 both;
-    display: inline-block;
-}
-
-@keyframes an{
-    from{
-        opacity: 0;
-        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-    }
-    to{
-        opacity: 1;
-        transform: perspective(500px) translate3d(0, 0, 0);
-    }
-} */
