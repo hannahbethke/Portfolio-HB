@@ -4,11 +4,11 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: x-large;
+    font-size: larger;
 }
   
 #home {
-    background-color: #F0EFED;
+    /* background-color: #F0EFED; */
     background-repeat: no-repeat;
     background-size: cover;
     /* width: 100%;
@@ -99,6 +99,9 @@ TEST */
     backface-visibility: hidden;
   }
   
+  footer {
+    background-color: teal;
+  }
 
   /* TEXT ANIMATION */
 /* 
