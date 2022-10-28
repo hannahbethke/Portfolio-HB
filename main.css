@@ -5,6 +5,7 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: larger;
+    overflow-y:scroll;
 }
 
 #home {
@@ -16,7 +17,6 @@ body {
 
 #about {
     background-color: #F0EFED;
-    overflow-y: hidden;
 }
 
 #portfolio {
@@ -46,6 +46,7 @@ nav {
     background-color: white;
     width: 100%;
     justify-content: space-between;
+    z-index: 10;
 }
 
 h1, h3, nav {
@@ -62,10 +63,9 @@ TEST */
     margin-bottom: auto;
     overflow-x: auto;
     overflow-y: hidden;
-    /* background: teal; */
-    /* background-color: rgb(55, 55, 55); */
-    /* background-color: rgb(63, 62, 62); */
-    background-color: rgb(70, 70, 70);  
+    /* background-color: rgb(70, 70, 70);   */
+    /* background-color: #AC7CA0; */
+    background-color: #915e84;
 }
   
   .card-flip {
@@ -109,5 +109,7 @@ TEST */
   footer {
     /* background-color: teal; */
     /* background-color: rgb(55, 55, 55); */
-    background-color: rgb(70, 70, 70);  
+    /* background-color: rgb(70, 70, 70); */
+    background-color: #915e84;
+    
   }
