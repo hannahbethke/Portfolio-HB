@@ -1,12 +1,15 @@
 # Hannah Bethke
 Software Engineering | Web Developer 
 
-
 # Introducing Myself
+Hello! My name is Hannah and I'm a Full Stack Software Engineer and General Assembly graduate with a creative eye for design and a natural inclination for problem solving. I have loved solving mysteries, making discoveries and building things since I was a young child. I have worked in managerial/leadership positions for six+ years, have an extensive background in performance art, am a licensed massage therapist and hold a BS in physiology. 
+
+With over 20 years in the work force, I am a seasoned professional who knows how to dedicate myself to my work and my team. I am driven to deliver clear and concise code that performs well and meets accessibility standards, have a sharp eye for detail and am striving to engineer stylish and well designed layouts. I love learning and am always looking for ways to improve and create systems to optimize workflows and efficiencies.
+
 
 # User Stories
 
-- As a user, I am able to view Hannah Bethke's current portfolio, resume, and contact information
+As a user, I am able to view Hannah Bethke's current portfolio, resume, and contact information
 
 # Technologies Used
 
@@ -20,56 +23,17 @@ Software Engineering | Web Developer
 
 # Screenshots
 
-![main browser page](./assets/images/Screen Shot 2022-10-22 at 10.52.53 AM.png)
+![main browser page](./assets/screenshots/Screen_Shot.png)
 
 # Getting Started
 
-[Click here](https://hannah-bethke.netlify.app/) to see the deployed app!
+[Click here](https://hannah-bethke.netlify.app/) to see the deployed portfolio!
 
 
-# Developer Enhancements
 
 
-# TO DO
-Homepage
-- change nav font, weight?
-- new color background?
-- different text effect?
-- off center positioning of text?
-- new photo?
-- change button color? **
-- (make quirky version- "I make stuff...")
-- tin foil hat, alien spaceship, stick or skeleton drinking martini
-
-About Page
-- write about me **
-- change background color?
-
-Portfolio
-- write header p tag info
-- change background color of scroll div?
-- change background color of page?
-- change color of buttons?
-
-Contact 
-- "Let's make stuff together..."
-- change background color?
-
-Add animated divs/text/pics?
-Style for mobile/laptop
-
-Write README
-
-Get a domain?
-Deploy
-Make sure Tailwind still works after deployment
-- try other installation methods?
-
-Outcomes
-- Create Git Hub profil
 
 
-Known problems-
-- Portfolio scroll bar does not show when you hover a mouse over it.  Only shows when using a track pad.
-    - accessibility issue
+
+
 
