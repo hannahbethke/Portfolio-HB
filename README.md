@@ -28,12 +28,3 @@ As a user, I am able to view Hannah Bethke's current portfolio, resume, and cont
 # Getting Started
 
 [Click here](https://hannah-bethke.netlify.app/) to see the deployed portfolio!
-
-
-
-
-
-
-
-
-
