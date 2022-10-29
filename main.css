@@ -4,8 +4,9 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: larger;
+    font-size: x-large;
     overflow-y:scroll;
+    line-height: 2.5rem;
 }
 
 #home {
