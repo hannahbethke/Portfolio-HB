@@ -1,23 +1,23 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-size: x-large;
-    overflow-y:scroll;
-    line-height: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: x-large;
+  overflow-y:scroll;
+  line-height: 2.5rem;
 }
 
 #home {
-    background-image: url("assets/images/befunky_2.jpg");
-    background-repeat: no-repeat;
-    background-size:auto;
-    background-position: bottom right;
+  background-image: url("assets/images/befunky_2.jpg");
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: bottom right;
 }
 
 #about {
-    background-color: #F0EFED;
+  background-color: #F0EFED;
 }
 
 #portfolio {
@@ -25,92 +25,77 @@ body {
 }
 
 .card-img-top {
-    height: 231px;
-    min-width: 400px;
-    overflow: hidden;
-    border-bottom: solid 1px gray;
+  height: 231px;
+  min-width: 400px;
+  overflow: hidden;
+  border-bottom: solid 1px gray;
 }
 
 .card-body-back {
-    height: 99px;
-    border-bottom: solid 1px gray;
+  height: 99px;
+  border-bottom: solid 1px gray;
 }
 
 #contact {
-    background-color: #F0EFED;
-
+  background-color: #F0EFED;
 }
 
-
 nav {
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    justify-content: space-between;
-    z-index: 10;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 10;
 }
 
 h1, h3, nav {
-    /* font-family: 'Yeseva One', cursive; */
-    font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Yeseva One', cursive; */
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* 
-TEST */
+.scroll-container {
+  max-width: 100%;
+  margin-bottom: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #915e84;
+}
 
-  
-  .scroll-container {
-    max-width: 100%;
-    margin-bottom: auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    /* background-color: rgb(70, 70, 70);   */
-    /* background-color: #AC7CA0; */
-    background-color: #915e84;
+.card-flip {
+  perspective: 1000px;
+  display: flex;
+  width: calc((400px * 3) + (20px * 6));
 }
   
-  .card-flip {
-    perspective: 1000px;
-    display: flex;
-    /* total cards width + cards margin */
-    /* comment out and flip the last card to see the effect */
-    width: calc((400px * 3) + (20px * 6));
-  }
-  
-  .flip {
-    min-width: 400px;
-    height: 400px;
-    margin: 20px;
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-  }
-  
-  .isFlipped {
-    transform: rotateY(180deg);
-  }
-  
-  .back {
-    transform: rotateY(180deg);
-  }
+.flip {
+  min-width: 400px;
+  height: 400px;
+  margin: 20px;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
 
-  .front {
-    background: #FEFEFE;
-    /* color: white; */
-  }
-  
-  .front,
-  .back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-  }
-  
-  footer {
-    /* background-color: teal; */
-    /* background-color: rgb(55, 55, 55); */
-    /* background-color: rgb(70, 70, 70); */
-    background-color: #915e84;
-    
-  }
+.isFlipped {
+  transform: rotateY(180deg);
+}
+
+.front {
+  background: #FEFEFE;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+footer {
+  background-color: #915e84;
+}
