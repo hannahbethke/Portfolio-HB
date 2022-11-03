@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- audiowide font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat&family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200&display=swap" rel="stylesheet"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,23 +21,33 @@
 </head>
 <body>
     <header>
-        <nav class="flex flex-row items-center justify-center w-full p-2">
-            <a href="#about">About</a>
+        <nav class="flex justify-center items-cemter p-2">
             <a href="#home">
-                <span class="text-3xl px-5 font-black"> H | B </span>
+                <span class="text-5xl items-left pl-2 md:pl-5" id="logo"> H | B </span>
             </a>
-            <a class="pr-5" href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <div class="flex pl-12 items-center">
+                <a class="p-2" href="#about">About</a>
+                <a class="p-2" href="#portfolio">Portfolio</a>
+                <a class="p-2" href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="flex flex-col justify-center items-left h-screen" id="home">
-            <h1 class="text-7xl ml-5 md:ml-52" data-aos="fade-right" data-aos-duration="2200">
-                Hannah Bethke
-            </h1>
-            <p class="text-3xl p-10 md:ml-52 font-semibold" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                Software Engineer | Web Developer
-            </p>
+        <div class="flex flex-col justify-center items-center h-screen" id="home">
+            <div >
+                <h1 class="text-7xl italic sm:mr-96" data-aos="fade-right" data-aos-duration="2200">
+                    Hannah Bethke
+                </h1>
+                <div class="flex flex-col justify-center items-center md:mr-96" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <p class="text-4xl p-10 font-semibold">
+                        Software Engineer | Web Developer
+                    </p>
+                    <a href="#about" class="btn bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+            <div class="w-full h-8 absolute bottom-7" id="homeBanner"></div>
         </div>
         <div class="flex flex-col min-h-screen" id="about">
             <div>
