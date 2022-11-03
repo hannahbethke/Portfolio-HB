@@ -10,10 +10,11 @@ body {
 }
 
 #home {
-  background-image: url("assets/images/befunky_2.jpg");
+  /* background-image: url("assets/images/befunky_2.jpg"); */
+  background-image: url("assets/images/test_images/Bethke_test1.jpg");
   background-repeat: no-repeat;
-  background-size:auto;
-  background-position: bottom right;
+  background-size:contain;
+  background-position: right;
 }
 
 #about {
@@ -51,6 +52,19 @@ nav {
 h1, h3, nav {
   /* font-family: 'Yeseva One', cursive; */
   font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+  /* font-family: 'Audiowide', cursive; */
+  background: #650D88;
+  background: linear-gradient(to right, #650D88 42%, #E78200 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#homeBanner {
+  background: #650D88;
+  background: linear-gradient(to right, #650D88 42%, #E78200 100%);
 }
 
 .scroll-container {
