@@ -1,25 +1,53 @@
 html {
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
+  overflow-y: scroll;
   font-size: x-large;
-  overflow-y:scroll;
   line-height: 2.5rem;
 }
 
 #home {
-  /* background-image: url("assets/images/befunky_2.jpg"); */
-  background-image: url("assets/images/test_images/Bethke_test1.jpg");
-  background-repeat: no-repeat;
-  background-size:contain;
-  background-position: right;
+  background-image: url("assets/images/home_img.png");
+  background-position: bottom;
+  background-size: 20rem;
+  background-repeat: repeat-x;
+}
+
+#logo {
+  background: linear-gradient(to right, #660684 42%, #93FFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
 }
 
 #about {
-  background-color: #F0EFED;
+background-color: rgb(135, 152, 170);
+/* background-color: #F0EFED; */
 }
+
+#HB {
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+  max-height: 85%;
+}
+
+#skills {
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+  list-style: none;
+}
+
+#skills li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color:#915e84;
+    font-weight: bolder; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+  }
 
 #portfolio {
     /* background-color: black; */
@@ -44,27 +72,13 @@ body {
 nav {
   position: fixed;
   background-color: white;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
   z-index: 10;
 }
 
 h1, h3, nav {
-  /* font-family: 'Yeseva One', cursive; */
   font-family: 'Montserrat', sans-serif;
-}
-
-#logo {
-  /* font-family: 'Audiowide', cursive; */
-  background: #650D88;
-  background: linear-gradient(to right, #650D88 42%, #E78200 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#homeBanner {
-  background: #650D88;
-  background: linear-gradient(to right, #650D88 42%, #E78200 100%);
 }
 
 .scroll-container {
@@ -110,6 +124,11 @@ h1, h3, nav {
   backface-visibility: hidden;
 }
 
-footer {
+.footer {
+  flex-grow: 1;
+}
+#footer {
   background-color: #915e84;
+  position: relative;
+  bottom:0;
 }
