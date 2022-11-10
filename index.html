@@ -5,14 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet">
-<!-- audiowide font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat&family=Raleway:wght@200&display=swap" rel="stylesheet">
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,67 +16,73 @@
 </head>
 <body>
     <header>
-        <nav class="flex justify-center items-cemter p-2">
+        <nav class="flex justify-center items-cemter md:justify-between p-2">
             <a href="#home">
-                <span class="text-5xl items-left pl-2 md:pl-5" id="logo"> H | B </span>
+                <span class="md:text-5xl text-2xl flex justify-center p-3 md:pl-5" id="logo"> H | B </span>
             </a>
-            <div class="flex pl-12 items-center">
+            <div class="hidden md:flex pl-5 items-center">
                 <a class="p-2" href="#about">About</a>
                 <a class="p-2" href="#portfolio">Portfolio</a>
-                <a class="p-2" href="#contact">Contact</a>
+                <a class="p-2" href="#portfolio">Skills</a>
+                <a class="p-2 md:mr-5" href="#contact">Contact</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="flex flex-col justify-center items-center h-screen" id="home">
-            <div >
-                <h1 class="text-7xl italic sm:mr-96" data-aos="fade-right" data-aos-duration="2200">
+        <div class="flex flex-col justify-center items-center min-h-screen" id="home">
+            <div class="mb-64">
+                <h1 class="flex flex-col justify-center items-center md:text-7xl text-4xl italic" data-aos="fade-right" data-aos-duration="2200">
                     Hannah Bethke
                 </h1>
-                <div class="flex flex-col justify-center items-center md:mr-96" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                    <p class="text-4xl p-10 font-semibold">
+                <div class="flex flex-col justify-center items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <p class="md:text-4xl text-xl py-10 font-semibold">
                         Software Engineer | Web Developer
                     </p>
-                    <a href="#about" class="btn bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
+                    <a href="#about" class="md:text-2xl text-lg btn bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
                         Learn more
                     </a>
                 </div>
             </div>
-            <div class="w-full h-8 absolute bottom-7" id="homeBanner"></div>
         </div>
         <div class="flex flex-col min-h-screen" id="about">
             <div>
-                <p class="text-7xl bg-black text-white p-16">about me...</p>
+                <p class="text-7xl bg-black text-white pt-20 p-10">about me...</p>
             </div>
             <div class="lg:grid lg:grid-cols-3 flex flex-col p-10 w-screen h-full"> 
-                <img class="col-span-1 col-span-1 shadow-2xl rounded-lg" data-aos="fade-up-right" data-aos-duration="1000" src="./assets/images/Bethke 2022.jpg" alt="Photo of Hannah Bethke">
-                <div class="flex flex-col col-span-2 items-center m-10 p-10" data-aos="fade-up-left" data-aos-duration="1600">
-                    <h1 class="font-black my-2.5">
+                <img class="col-span-1 col-span-1 shadow-2xl rounded-lg" data-aos="fade-up-right" data-aos-duration="1000" src="./assets/images/Bethke 2022.jpg" alt="Photo of Hannah Bethke" id="HB">
+                <div class="flex flex-col col-span-2 items-center md:p-16" data-aos="fade-up-left" data-aos-duration="1600">
+                    <h1 class="text-3xl font-black mb-5">
                         About Me
                     </h1>
-                    <p>Hello! My name is Hannah and I'm a Full Stack Software Engineer and General Assembly student with a creative eye for design and a natural inclination 
-                        for problem solving. Fueled by my 20+ years as a professional dancer as well as my six years of experience in managerial roles, 
-                        I'm driven to deliver unique and stylish layouts, clear and concise code, and out-of-the-box solutions to optimize workflows and efficiencies.
+                    <p class="font-semibold">Hello!  My name is Hannah and I'm a Full Stack Software Engineer and General Assembly graduate with a creative eye for design and a natural inclination for problem solving.  I have loved solving mysteries, making discoveries and building things since I was a young child.  I have worked in managerial/leadership positions for six+ years, have an extensive background in performance art, am a licensed massage therapist and hold a BS in physiology. 
                     </p>
-                    <h1 class="font-black my-2.5">
+                    <h1 class="text-3xl font-black mt-10 mb-5">
                         Current Skills
                     </h1>
-                    <p>
-                        <span><i class="fa-brands fa-html5 text-7xl"></i></span>
-                        <span><i class="fa-brands fa-square-js text-7xl"></i></span>
-                        <span><i class="fa-brands fa-css3 text-7xl"></i></span>
-                        <span><i class="fa-brands fa-node-js text-7xl"></i></span>
-                        <span><i class="fa-brands fa-python text-7xl"></i></span>
-                        <span><i class="fa-brands fa-react text-7xl"></i></span>
-                        <span><i class="fa-brands fa-bootstrap text-7xl"></i></span>
-                        <!-- HTML · JavaScript · CSS · Node.js · Express · EJS · Mongoose · MongoDB · PostgreSQL · React.js · Python · Django · Bootstrap · Bulma · Materialize · Tailwind · Sass -->
-                    </p>
+                    <ul class="w-full" id="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>EJS</li>
+                        <li>Mongoose</li>
+                        <li>MongoDB</li>
+                        <li>React.js</li>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Rails</li>
+                        <li>Tailwind</li>
+                        <li>SASS</li>
+                        <li>Materiaize</li>
+                        <li>Bootstrap</li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="flex flex-col min-h-screen" id="portfolio">
             <div>
-                <p class="text-7xl bg-black text-white p-16">recent work...</p>
+                <p class="text-7xl bg-black text-white pt-20 p-10">recent work...</p>
             </div>
             <div class="flex flex-col items-center justify-center p-6 mx-10 divide-y-2" data-aos="fade-left" data-aos-duration="900">
                 <h1 class="font-black p-2">
@@ -311,6 +312,9 @@
                 </div>
             </div>
         </div>	
+        
+    </main>
+    <footer>
         <div class="flex flex-col items-center justify-center min-h-screen" id="contact">
             <div class="bg-black w-full" data-aos="zoom-in" data-aos-duration="900">
                 <p class="text-7xl text-white pt-16 px-16">contact me...</p>
@@ -337,13 +341,18 @@
                     <span><i class="fa-solid fa-file pl-2"></i></span>
                 </a>
             </div>
+            <!-- <div class="w-full" id="footer">
+                <p class="p-6 text-white font-black text-right">
+                    Copyright &copy 2022 Hannah Bethke, Portfolio. All Rights Reserved.
+                </p>
+            </div> -->
         </div>
-    </main>
-    <footer>
+    </footer>
+    <div class="w-full" id="footer">
         <p class="p-6 text-white font-black text-right">
             Copyright &copy 2022 Hannah Bethke, Portfolio. All Rights Reserved.
         </p>
-    </footer>
+    </div>
     <script src="script.js"></script>
     <script>
         AOS.init();
