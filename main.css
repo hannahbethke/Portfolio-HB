@@ -31,7 +31,11 @@ background-color: rgb(135, 152, 170);
 #HB {
   -webkit-filter: grayscale(70%);
   filter: grayscale(70%);
-  max-height: 85%;
+  max-height: 90%;
+}
+
+#aboutGrid {
+  max-height: 70%;
 }
 
 #skills {
