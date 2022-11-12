@@ -140,11 +140,18 @@ h1, h3, h2, nav {
   color: rgb(112, 160, 179);
 }
 
-.footer {
+/* .footer {
   flex-grow: 1;
-}
+} */
 #footer {
-  background-color: #915e84;
+  /* background-color: #915e84; */
+  background-color: rgb(112, 160, 179);
   position: relative;
   bottom:0;
+  flex-grow: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: .2em;
 }
