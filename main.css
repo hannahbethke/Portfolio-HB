@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  width: 100vw;
 }
 
 body {
@@ -24,12 +23,12 @@ body {
 }
 
 #about {
-background-color: rgb(135, 152, 170);
+background-color: rgb(112, 160, 179);
 }
 
 #HB {
-  -webkit-filter: grayscale(70%);
-  filter: grayscale(70%);
+  /* -webkit-filter: grayscale(50%);
+  filter: grayscale(50%); */
   max-height: 90%;
 }
 
@@ -37,9 +36,6 @@ background-color: rgb(135, 152, 170);
   max-height: 70%;
 }
 
-/* #skills {
-  background-color: #F0EFED;
-} */
 #skills-list {
   columns: 4;
   -webkit-columns: 4;
@@ -79,7 +75,7 @@ background-color: rgb(135, 152, 170);
 nav {
   position: fixed;
   background-color: white;
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
   z-index: 10;
 }
