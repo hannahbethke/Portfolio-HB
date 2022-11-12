@@ -67,7 +67,7 @@
             </div>
             <div class="flex flex-col justify-center items-center">
                 <h1 class="text-3xl font-black pt-20">I have experience with the following technologies:</h1>
-                <div class="flex flex-col justify-center items-center md:p-32 m-20 shadow-2xl bg-black text-white texth-[90%] w-[60%] rounded border-[12px] border-white">
+                <div class="flex flex-col justify-center items-center md:p-32 m-20 shadow-2xl bg-black text-white texth-[90%] w-[90%] rounded border-[12px] border-white">
                     <ul id="skills-list">
                         <li>HTML</li>
                         <li>CSS</li>
@@ -89,7 +89,7 @@
                 </div> 
             </div>
         </div>
-        <div class="flex flex-col min-h-screen " id="portfolio">
+        <div class="flex flex-col min-h-screen" id="portfolio">
             <div>
                 <p class="text-6xl bg-black text-white pt-28 p-10 border-t-2 border-black">recent work...</p>
             </div>
@@ -333,9 +333,45 @@
     </main>
     <footer>
         <div class="flex flex-col items-center justify-center min-h-screen" id="contact">
-            <div class="bg-black w-full" data-aos="zoom-in" data-aos-duration="900">
-                <p class="text-7xl text-white pt-16 px-16">contact me...</p>
-                <p class="text-2xl text-white p-16">
+            <div class="bg-black text-white w-full" data-aos="zoom-in" data-aos-duration="900">
+                <div>
+                    <p class="text-6xl bg-black text-white pt-28 p-10">contact me...</p>
+                </div>
+                <div class="ml-64">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                            <label for="name"><span><i class="fa-solid fa-user-astronaut"></i></span> Name</label>
+                            <input type="text" id="name" name="name" />
+                        </p>
+                        <p>
+                            <label for="email"><span><i class="fa-sharp fa-solid fa-envelope"></i></span> Email</label>
+                            <input type="text" id="email" name="email" />
+                        </p>
+                        <p>
+                            <label for="message"><span><i class="fa-solid fa-message"></i></span> Message</label>
+                            <textarea id="message" name="message"></textarea>
+                        </p>
+                        <p>
+                            <button class="btn bg-[#915e84] font-semibold text-white py-2 px-4 rounded" type="submit"><span><i class="fa-sharp fa-solid fa-paper-plane text-white"></i></span> Send</button>
+                        </p>
+                    </form>
+                </div>
+            
+                <div class="p-2">
+                    <a class="text-3xl pr-2" href="https://www.linkedin.com/in/hannah-bethke/" target="_blank" rel="noreferrer noopener">
+                        Linked In
+                        <span><i class="fa-brands fa-linkedin pl-2"></i></span>
+                    </a>
+                    <a class="text-3xl pr-2" href="https://github.com/hannahbethke" target="_blank" rel="noreferrer noopener">
+                        Git Hub
+                        <span><i class="fa-brands fa-square-github pl-2"></i></span>
+                    </a>
+                    <a class="text-3xl pr-2" href="assets/Bethke_Resume_2022_online.pdf" target="_blank" rel="noreferrer noopener">
+                        Resume
+                        <span><i class="fa-solid fa-file pl-2"></i></span>
+                    </a>
+                </div>
+                <p class="text-2xl text-white p-2">
                     <span>
                         <a class="text-xl" href="https://www.google.com/maps/place/Boulder,+CO/@40.0293099,-105.2399774,12z/data=!3m1!4b1!4m5!3m4!1s0x876b8d4e278dafd3:0xc8393b7ca01b8058!8m2!3d40.0149856!4d-105.2705456" target="_blank" rel="noreferrer noopener">
                             <span><i class="fa-sharp fa-solid fa-location-dot text-white pr-2"></i></span>
@@ -343,33 +379,19 @@
                     </span>
                     I am based in Boulder, Colorado and am open to both local and remote work
                 </p>
-            </div>
-            <div class="p-10">
-                <a class="text-3xl pr-2" href="https://www.linkedin.com/in/hannah-bethke/" target="_blank" rel="noreferrer noopener">
-                    Linked In
-                    <span><i class="fa-brands fa-linkedin pl-2"></i></span>
-                </a>
-                <a class="text-3xl pr-2" href="https://github.com/hannahbethke" target="_blank" rel="noreferrer noopener">
-                    Git Hub
-                    <span><i class="fa-brands fa-square-github pl-2"></i></span>
-                </a>
-                <a class="text-3xl pr-2" href="assets/Bethke_Resume_2022_online.pdf" target="_blank" rel="noreferrer noopener">
-                    Resume
-                    <span><i class="fa-solid fa-file pl-2"></i></span>
-                </a>
-            </div>
-            <!-- <div class="w-full" id="footer">
+                </div>
+            <div class="w-full" id="footer">
                 <p class="p-6 text-white font-black text-right">
                     Copyright &copy 2022 Hannah Bethke, Portfolio. All Rights Reserved.
                 </p>
-            </div> -->
+            </div>
         </div>
     </footer>
-    <div class="w-full" id="footer">
+    <!-- <div class="w-full" id="footer">
         <p class="p-6 text-white font-black text-right">
             Copyright &copy 2022 Hannah Bethke, Portfolio. All Rights Reserved.
         </p>
-    </div>
+    </div> -->
     <script src="script.js"></script>
     <script>
         AOS.init();
