@@ -17,7 +17,7 @@ body {
 }
 
 #logo {
-  background: linear-gradient(to right, #660684 42%, #93FFFF 100%);
+  background: linear-gradient(to right, #915e84 42%, #93FFFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  
 }
@@ -32,7 +32,6 @@ background-color: rgb(112, 160, 179);
   max-height: 90%;
 }
 
-
 #aboutGrid {
   max-height: 70%;
 }
@@ -46,16 +45,12 @@ background-color: rgb(112, 160, 179);
 }
 
 #skills li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    content: "\2022";
     color:#915e84;
-    font-weight: bolder; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
+    font-weight: bolder;
+    display: inline-block;
+    width: 1em;
   }
-
-#portfolio {
-    /* background-color: black; */
-}
 
 .card-img-top {
   height: 231px;
@@ -75,7 +70,7 @@ background-color: rgb(112, 160, 179);
 
 nav {
   position: fixed;
-  background-color: white;
+  /* background-color: white; */
   width: 100%;
   z-index: 10;
 }
@@ -140,11 +135,7 @@ h1, h3, h2, nav {
   color: rgb(112, 160, 179);
 }
 
-/* .footer {
-  flex-grow: 1;
-} */
 #footer {
-  /* background-color: #915e84; */
   background-color: rgb(112, 160, 179);
   position: relative;
   bottom:0;
@@ -159,5 +150,4 @@ label {
 input, textarea {
   width:100%;
   border: solid 1px #d1d5db;
-
 }
