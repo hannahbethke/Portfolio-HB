@@ -9,19 +9,20 @@ btns.forEach((btn) => {
   });
 });
 
-  // Animate Lettering
+const mobileNavMenu = document.querySelector("#mobileNavMenu");
+const burgerIcon = document.querySelector("#burgerIcon");
+const closeIcon = document.querySelector("#closeIcon");
 
-  // let text = document.getElementById('text');
-  // let newDom = '';
-  // let animationDelay = 6;
+function mobileMenuOpen() {
+  mobileNavMenu.style.display = "flex";
+  mobileNavMenu.style.flexDirection = "column";
+  burgerIcon.style.display = "none";
+};
 
-  // for(let i = 0; i < text.innerText.length; i++) {
-  //     newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
-  // };
+function mobileMenuClose() {
+  mobileNavMenu.style.display = "none";
+  burgerIcon.style.display = "flex";
+};
 
-  // text.innerHTML = newDom;
-  // let length = text.children.length;
-
-  // for(let i = 0; i < length; i++) {
-  //     text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
-  // };
+burgerIcon.addEventListener("click", mobileMenuOpen);
+closeIcon.addEventListener("click", mobileMenuClose);
